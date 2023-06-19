@@ -87,3 +87,53 @@ body {
         display: none;
     }
 }
+
+.articles_1 {
+    margin: 0 180px;
+    & h3, p {
+        margin: 0
+    }
+}
+
+.articles_1__card {
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+    text-align: center;
+
+    & .articles_1__card--contain {
+        background-color: $grey-panda;
+        border-radius: 4px;
+        width: 250px;
+
+        & .main_card {
+            margin: 0;
+            padding: 14px 0;
+        }
+    }
+}
+
+.header_card img {
+        width: 100%;
+        background-size: cover;
+    }
+
+.button_card {
+    margin: 0 14px 11px 14px;
+
+    & a {
+        display: block;
+        background-color: $green-panda;
+        padding: 10px;
+        text-decoration: none;
+        color: $white-panda;
+        text-transform: uppercase;
+        font-size: 1.1em;
+        border-radius: 4px;
+    }
+}
+
+.button_card {
+        background-color: $grey-panda;
+}
